@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     needs: job_1
     steps:
-    - run: echo ${{needs.job_1.outputs_1}} ${{needs.job_2.outputs_2}}
+    - run: echo ${{needs.job_1.outputs.outputs_1}} ${{needs.job_1.outputs.outputs_2}}
