@@ -1,3 +1,10 @@
+name: Go matrix build
+on:
+  push:
+    branches:
+      - main
+
+
 jobs:
   build:
     strategy:
