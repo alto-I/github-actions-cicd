@@ -9,5 +9,5 @@ jobs:
         run: echo "12345" > ${GITHUB_WORKSPACE}/myoutput.txt
       - name: Read data in a job
         run: |
-          value=${cat ${GITHUB_WORKSPACE}}/myoutput.txt)
+          value=$(cat ${GITHUB_WORKSPACE}/myoutput.txt)
           echo "Read data: ${value}"
